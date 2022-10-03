@@ -13,7 +13,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr v-for="category in categories.data">
+        <tr v-for="category in categories.data"> <!--missing :key="" attribute-->
           <th scope="row" class="align-middle">
             {{ category.id }}
           </th>

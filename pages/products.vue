@@ -100,6 +100,8 @@ import Favourites from "@/components/Favourites";
 import CustomNavbar from "@/components/CustomNavbar";
 import CustomModal from "@/components/CustomModal";
 
+// too much code in one file. its better to seperate show product in different route / file 
+
 export default {
   name: "products",
   components: {
@@ -166,7 +168,7 @@ export default {
       }
     }
   },
-  watch: {
+  watch: { //nice idea
     favourites: {
       handler(newValue) {
         localStorage.setItem('favourites', JSON.stringify(newValue));

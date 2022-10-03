@@ -14,8 +14,8 @@ export default {
   components: {CategoriesTable, CustomNavbar},
   data() {
     return {
-      categories: '',
-      products: '',
+      categories: '', //default empty string but expecting array ? 
+      products: '', // why we have when we never use it 
     }
   },
   created() {
